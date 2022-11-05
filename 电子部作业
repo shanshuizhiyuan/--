@@ -1,21 +1,20 @@
 #include<stdio.h>
 void main()
 {
-int a,b,c,max;
-	scanf("%d%d%d",&a,&b,&c);
-    if(a>b)
-	max=a;
+	float shengao,tizhong,bmi;
+	printf("请输入身高");
+	scanf("%f",&shengao);
+	printf("请输入体重");
+	scanf("%f",&tizhong);
+	bmi=tizhong/(shengao*shengao);
+	printf("%f\n",bmi);
+	if(bmi<18.5)
+	printf("偏瘦");
+	else if(bmi<24)
+	printf("正常");
+	else if(bmi<=28)
+	printf("超重");
 	else
-	max=b;
-	if(c>max)
-	max=c;
-	else
-	max=max;
-	printf("%d\n",max);
-
-
-
-
-
-
+	printf("肥胖");
+}
 
